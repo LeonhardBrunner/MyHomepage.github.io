@@ -1,0 +1,89 @@
+.centered {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.large {
+    font-size: large;
+}
+
+.medium {
+    font-size: medium;
+}
+
+.small {
+    font-size: small;
+}
+
+.meineListe li:hover {
+    text-decoration: underline !important;
+    cursor: pointer;
+}
+
+.meineListe li {
+    display: list-item !important;
+}
+
+.row-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.infoListe {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.colorScheme {
+    background: rgba(31, 33, 31, 0.101);
+}
+
+.image-text-wrapper {
+    display: flex;
+    /* Bild + Text wird nebeneinander gestellt */
+    align-items: flex-start;
+    /* Beide werden oben ausgerichtet */
+    gap: 20px;
+    /* Abstand zwischen Bild und Text */
+}
+
+.textblock {
+    max-width: 500px;
+    /* Textbreite wird sichergestellt */
+}
+
+.tooltip-text-specifier {
+    position: relative;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: relative;
+    cursor: pointer;
+    display: inline;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 110%;
+    transition: opacity 0.2s;
+}
+
+.tooltip-text-specifier:hover .tooltip-text {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
